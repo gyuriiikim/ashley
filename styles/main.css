@@ -1,0 +1,112 @@
+body, html {
+  position: relative;
+}
+
+.scroll_button {
+  display: none;
+  background: lightblue;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 999;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 400px;
+}
+.scroll_button .button .icon {
+  display: inline-block;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.scroll_button .button .icon img {
+  width: 90%;
+}
+header {
+  background: rgba(33, 42, 62, 0.9);
+  z-index: 900;
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+header .header_wrap {
+  width: 1800px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_wrap h1 .logo img {
+  width: 100%;
+}
+header .header_wrap nav a {
+  color: #fff;
+  font-weight: 600;
+  margin-left: 100px;
+  font-size: 1.1rem;
+}
+header .header_wrap nav a:first-child {
+  margin: 0;
+}
+header .header_wrap nav a:hover {
+  color: #ffb100;
+  transition: all 0.5s;
+}
+header .header_wrap .join {
+  color: #fff;
+  font-weight: 600;
+}
+
+main .bnr_slide .swiper {
+  width: 100%;
+}
+main .bnr_slide .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .bnr_slide .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+main .bnr_slide .swiper .swiper-wrapper .bnr2 {
+  position: relative;
+}
+main .bnr_slide .swiper .swiper-wrapper .bnr2 span img {
+  width: 100%;
+}
+main .bnr_slide .swiper .swiper-wrapper .bnr2 .more_btn {
+  position: absolute;
+  left: 15%;
+  bottom: 25%;
+  color: #fff;
+  background: #ffb100;
+  width: 150px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+main .bnr_slide .swiper .swiper-wrapper .bnr2 .more_btn:hover {
+  background: #fff;
+  color: #212a3e;
+  transition: all 0.5s;
+}
+main .bnr_slide .swiper .swiper-pagination {
+  position: absolute;
+  bottom: 10%;
+}
+main .bnr_slide .swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 1px solid #fff;
+  opacity: 1;
+}
+main .bnr_slide .swiper .swiper-pagination-bullet-active {
+  width: 40px;
+  transition: width 0.5s;
+  border-radius: 5px;
+  background: #212a3e;
+  border: 1px solid transparent;
+}/*# sourceMappingURL=main.css.map */

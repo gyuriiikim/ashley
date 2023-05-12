@@ -1,0 +1,88 @@
+$color1:#212a3e;
+$color2:#ffb100;
+$color3:#fff;
+$color4:#000;
+$font:'Roboto';
+//  -----------------------------------scroll버튼
+body, html {position:relative;}
+.scroll_button {
+    display:none;
+    background:lightblue;
+    position:fixed; right:0; top:50%; z-index:999;
+    transform:translateY(-50%);
+    width:100px; height:400px;
+    .button {
+        .icon {
+            display:inline-block; width:50px;
+            background:rgba(0,0,0,0.5);
+            img {width:90%;}
+        }
+        p {}
+    }
+}
+// ---------------------------------------------- header
+header {
+    background:rgba($color: $color1, $alpha: 0.9); z-index:900;
+    width:100%; height:80px; position:sticky; left:0; top:0;
+    .header_wrap {
+        width:1800px; margin:0 auto; height:100%;
+        display:flex; justify-content:space-between;
+        align-items:center;
+        h1 {
+            .logo {
+                img {width:100%;}
+            }
+        }
+        nav {
+            a {
+                color:$color3; font-weight:600; margin-left:100px; font-size:1.1rem;
+            }
+            a:first-child {margin:0;}
+            a:hover {
+                color:$color2; transition:all 0.5s;
+            }
+        }
+        .join {color:$color3; font-weight:600;}
+    }
+}
+// ------------------------------------------------------- main
+main {
+    .bnr_slide {
+        .swiper {
+            width:100%;
+            .swiper-wrapper {
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {width:100%;}
+                    span {
+                        img{}
+                    }
+                    .more_wrap {
+                        .more_btn {}
+                        p {
+                            img {}
+                        }
+                    }
+                }
+                .bnr2 {
+                    position:relative;
+                    span {
+                        img {width:100%;}
+                    }
+                    .more_btn {
+                        position:absolute; left:15%; bottom:25%; color:$color3;
+                        background:$color2; width:150px; line-height:40px;
+                        text-align:center; font-size:1.2rem; 
+                    }
+                    .more_btn:hover {background:$color3; color:$color1; transition:all 0.5s;}
+                }
+            }
+            .swiper-pagination {position:absolute; bottom:10%;}
+            .swiper-pagination-bullet { width: 12px; height: 12px; background: transparent; border: 1px solid $color3; opacity: 1; }
+            .swiper-pagination-bullet-active { width: 40px; transition: width .5s; border-radius: 5px; background: $color1; border: 1px solid transparent; }
+        }
+    }
+    // --------------------------------------------------- event
+}
