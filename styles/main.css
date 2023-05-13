@@ -1,28 +1,54 @@
+html {
+  overflow-x: hidden;
+}
+
 body, html {
   position: relative;
 }
 
 .scroll_button {
-  display: none;
-  background: lightblue;
   position: fixed;
   right: 0;
   top: 50%;
   z-index: 999;
   transform: translateY(-50%);
   width: 100px;
-  height: 400px;
+  height: 370px;
+}
+.scroll_button .button {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 5px;
 }
 .scroll_button .button .icon {
   display: inline-block;
-  width: 50px;
-  background: rgba(0, 0, 0, 0.5);
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  position: relative;
 }
-.scroll_button .button .icon img {
-  width: 90%;
+.scroll_button .button .icon span {
+  display: block;
+  width: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
+.scroll_button .button .icon span img {
+  width: 100%;
+}
+.scroll_button .button p {
+  font-size: 0.7rem;
+  line-height: 2;
+  color: #fff;
+}
+
 header {
-  background: rgba(33, 42, 62, 0.9);
+  background: #212a3e;
   z-index: 900;
   width: 100%;
   height: 80px;
@@ -38,10 +64,20 @@ header .header_wrap {
   justify-content: space-between;
   align-items: center;
 }
+header .header_wrap h1 .logo {
+  width: 200px;
+}
 header .header_wrap h1 .logo img {
   width: 100%;
 }
+header .header_wrap nav {
+  display: flex;
+  justify-content: space-between;
+}
 header .header_wrap nav a {
+  display: block;
+  width: 75px;
+  text-align: center;
   color: #fff;
   font-weight: 600;
   margin-left: 100px;
@@ -54,9 +90,30 @@ header .header_wrap nav a:hover {
   color: #ffb100;
   transition: all 0.5s;
 }
-header .header_wrap .join {
-  color: #fff;
-  font-weight: 600;
+header .header_wrap form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 300px;
+}
+header .header_wrap form #txt {
+  margin-right: 5px;
+  padding: 2px 15px;
+}
+header .header_wrap form a {
+  width: 22px;
+  display: inline-block;
+}
+header .header_wrap form a img {
+  width: 100%;
+}
+header .header_wrap a {
+  display: block;
+  width: 30px;
+}
+header .header_wrap a img {
+  width: 100%;
 }
 
 main .bnr_slide .swiper {
@@ -97,16 +154,267 @@ main .bnr_slide .swiper .swiper-pagination {
   bottom: 10%;
 }
 main .bnr_slide .swiper .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   background: transparent;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   opacity: 1;
 }
 main .bnr_slide .swiper .swiper-pagination-bullet-active {
-  width: 40px;
+  width: 80px;
+  height: 15px;
   transition: width 0.5s;
-  border-radius: 5px;
+  border-radius: 10px;
   background: #212a3e;
   border: 1px solid transparent;
+  margin-bottom: 3px;
+}
+main .event {
+  width: 100%;
+  padding: 10% 0;
+  position: relative;
+}
+main .event > p {
+  font-size: 3rem;
+  font-family: "Roboto";
+  z-index: 800;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  font-weight: 600;
+  color: #212a3e;
+}
+main .event > p span {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #ffb100;
+}
+main .event .event_slide {
+  width: 1800px;
+  margin: 0 auto;
+  position: relative;
+}
+main .event .event_slide .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .event .event_slide .swiper-wrapper .swiper-slide span img {
+  width: 100%;
+}
+main .event .event_slide .swiper-wrapper .swiper-slide .box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  width: 700px;
+  height: 100%;
+  background: rgba(255, 177, 0, 0.6);
+}
+main .event .event_slide .swiper-wrapper .swiper-slide .box .wrap {
+  padding-left: 40px;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  transform: translateY(-50%);
+  display: block;
+  width: 500px;
+  height: 300px;
+}
+main .event .event_slide .swiper-wrapper .swiper-slide .box .wrap span {
+  width: 30%;
+  display: block;
+  margin-bottom: 40px;
+}
+main .event .event_slide .swiper-wrapper .swiper-slide .box .wrap span img {
+  width: 100%;
+}
+main .event .event_slide .swiper-wrapper .swiper-slide .box .wrap h1 {
+  font-size: 2rem;
+  font-family: "Roboto";
+  color: #212a3e;
+  font-weight: 700;
+  line-height: 50px;
+}
+main .event .event_slide .swiper-wrapper .swiper-slide .box .wrap p {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  font-family: "Roboto";
+}
+main .event .event_slide .swiper-wrapper .swiper-slide .box .wrap a {
+  color: #fff;
+  background: #212a3e;
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 100px;
+}
+main .event .event_slide .swiper-wrapper .swiper-slide .box .wrap a:hover {
+  border: 2px solid #212a3e;
+  background: #fff;
+  color: #ffb100;
+}
+main .event .event_slide .pagination_wrap {
+  position: absolute;
+  right: 3%;
+  bottom: 10%;
+  width: 600px;
+}
+main .event .event_slide .pagination_wrap .swiper-button-next {
+  font-size: 1rem;
+  color: #212a3e;
+}
+main .event .event_slide .pagination_wrap .swiper-button-prev {
+  color: #212a3e;
+}
+main .event .event_slide .pagination_wrap .swiper-pagination {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+main .event .event_slide .pagination_wrap .swiper-pagination-bullet {
+  width: 50px;
+  height: 5px;
+  background: transparent;
+  opacity: 1;
+  background: #fff;
+}
+main .event .event_slide .pagination_wrap .swiper-pagination-bullet-active {
+  width: 100px;
+  height: 5px;
+  transition: width 0.5s;
+  background: #212a3e;
+  border: 1px solid transparent;
+}
+main .best {
+  width: 100%;
+  background: #ffb100;
+  height: 100vh;
+}
+main .best .best_wrap {
+  width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 10%;
+}
+main .best .best_wrap .menu_wrap {
+  width: 1000px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .best .best_wrap .menu_wrap a img {
+  width: 100%;
+}
+main .best .best_wrap .right {
+  background: url(../images/best_box2.png) no-repeat;
+  background-position: center;
+  background-position: center;
+  width: 1000px;
+  position: relative;
+}
+main .best .best_wrap .right .wrap {
+  position: absolute;
+  left: 22%;
+  top: 8%;
+  width: 900px;
+  line-height: 100px;
+}
+main .best .best_wrap .right .wrap .txt1 {
+  font-size: 2.8rem;
+  color: #fff;
+  display: inline-block;
+  font-family: "Roboto";
+}
+main .best .best_wrap .right .wrap h1 {
+  font-family: "Roboto";
+  color: #212a3e;
+  font-size: 5rem;
+  font-weight: 600;
+}
+main .best .best_wrap .right .wrap .txt2 {
+  display: inline-block;
+  font-weight: 600;
+  font-family: "Roboto";
+  color: #fff;
+  font-size: 1.3rem;
+}
+main .best .best_wrap .right .wrap .txt2 span {
+  color: #212a3e;
+  font-size: 2rem;
+  font-weight: 600;
+}
+main .best .best_wrap .right .wrap .more {
+  background: #212a3e;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  width: 150px;
+  padding: 6px 20px;
+  text-align: center;
+}
+main .best .best_wrap .right .wrap .more:hover {
+  background: #fff;
+  color: #212a3e;
+  transition: all 0.5s;
+  font-weight: 700;
+}
+
+footer {
+  width: 100%;
+  background: #212a3e;
+  padding: 20px 0;
+}
+footer .ft_wrap {
+  width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .ft_wrap .left {
+  display: inline-block;
+}
+footer .ft_wrap .left p {
+  font-size: 0.875rem;
+  color: #fff;
+  line-height: 1.5;
+}
+footer .ft_wrap .right {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: end;
+}
+footer .ft_wrap .right .sns {
+  display: flex;
+}
+footer .ft_wrap .right .sns a {
+  width: 30px;
+  display: block;
+}
+footer .ft_wrap .right .sns a img {
+  width: 100%;
+}
+footer .ft_wrap .right .sns a:last-child {
+  margin-left: 10px;
+}
+footer .ft_wrap .right .ismsp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .ft_wrap .right .ismsp .ismsp_logo {
+  width: 80px;
+  display: block;
+}
+footer .ft_wrap .right .ismsp .ismsp_logo img {
+  width: 100%;
+}
+footer .ft_wrap .right .ismsp .txt_wrap p {
+  font-size: 0.875rem;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

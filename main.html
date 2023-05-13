@@ -13,25 +13,32 @@
     <!-- link -->
     <link rel="stylesheet" href="./styles/reset.css" type="text/css">
     <link rel="stylesheet" href="./styles/main.css">
-
 </head>
 <body>
     <!-- ----------------------------------------- 고정 버튼 -->
     <div class="scroll_button">
         <div class="button but1">
-            <a href="#" class="icon icon1"><img src="./images/icon1.png" alt=""></a>
+            <a href="#" class="icon icon1">
+                <span><img src="./images/icon1.png" alt=""></span>
+            </a>
             <p>채용</p>
         </div>
         <div class="button but2">
-            <a href="#" class="icon icon2"><img src="./images/icon2.png" alt=""></a>
+            <a href="#" class="icon icon2">
+                <span><img src="./images/icon2.png" alt=""></span>
+            </a>
             <p>고객의 소리</p>
         </div>
         <div class="button but3">
-            <a href="#" class="icon icon3"><img src="./images/icon3.png" alt=""></a>
+            <a href="#" class="icon icon3">
+                <span><img src="./images/icon3.png" alt=""></span>
+            </a>
             <p>온라인 몰</p>
         </div>
         <div class="button but4">
-            <a href="#" class="icon icon1"><img src="./images/icon4.png" alt=""></a>
+            <a href="#" class="icon icon1">
+                <span><img src="./images/icon4.png" alt=""></span>
+            </a>
             <p>TOP</p>
         </div>
     </div>
@@ -45,7 +52,14 @@
                 <a href="#" class="service">고객센터<span></span></a>
                 <a href="#" class="store">매장찾기<span></span></a>
             </nav>
-            <a href="#" class="join">로그인</a>
+            <form>
+                <felidset>
+                    <input type="text" id="txt" placeholder="" >
+                    <label for="txt"></label>
+                    <a href="#"><img src="./images/header_icon1.png" alt=""></a>
+                </felidset>
+            </form>
+            <a href="#"><img src="./images/header_icon2.png" alt=""></a>
         </div>
     </header>
     <!-- ------------------------------------------ main -->
@@ -72,78 +86,95 @@
         </div>
         <!-- ------------------------------------------ event -->
         <div class="event">
+            <p><span>EVENT</span> BOARD</p>
             <div class="txt">
-                <p>Ashley</p>
-                <p><span>EVENT</span> BOARD</p>
             </div>
-            <div class="swiper event">
+            <div class="swiper event_slide">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide event1">
                         <span><img src="./images/event_bnr1.jpg" alt="re:view,event"></span>
                         <div class="box box1">
-                            <p></p>
-                            <h1><span>[애슐리] 신메뉴</span><br>소비자 조시 참여 포인트<br><span>적립 당첨자 안내</span>&#40;1,000포인트&#41;</h1>
-                            <a href="#" class="more">자세히보기</a>
+                            <div class="wrap wrap1">
+                                <span><img src="./images/logo.png" alt="ashley"></span> 
+                                <h1>[애슐리] 신메뉴</h1>
+                                <p>소비자 조시 참여 포인트</p>
+                                <p>적립 당첨자 안내&#40;1,000포인트&#41;</p>
+                                <a href="#" class="more">자세히보기</a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide event2">
                         <span><img src="./images/event_bnr2.jpg" alt="grand open"></span>
                         <div class="box box2">
-                            <p></p>
-                            <h1><span>애슐리퀸즈 안양 엔터식스점</span><br>OPEN EVENT</h1>
-                            <a href="#" class="more">자세히보기</a>
+                            <div class="wrap wrap2">
+                                <span><img src="./images/logo.png" alt="ashley"></span> 
+                                <h1>애슐리퀸즈 안양 엔터식스점</h1>
+                                <p>OPEN EVENT</p>
+                                <a href="#" class="more">자세히보기</a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide event3"> 
                         <span><img src="./images/event_bnr3.jpg" alt="애슐리 캐릭터 출시 기념 이벤트 한정판 캐릭터 스티커 증정"></span>
                         <div class="box box3">
-                            <p></p>
-                            <h1><span>애슐리 굿즈 증정</span><br><span>선착순 | 20주년 기념 슐리백</span>&#40;일 100개 한정>&#41;</h1>
-                            <a href="#" class="more">자세히보기</a>
+                            <div class="wrap wrap3">
+                                <span><img src="./images/logo.png" alt="ashley"></span> 
+                                <h1>애슐리 굿즈 증정</h1>
+                                <p>선착순 | 20주년 기념 슐리백</span>&#40;일 100개 한정&#41;</p>
+                                <a href="#" class="more">자세히보기</a>
+                            </div>
                         </div>
                     </div>
-                </div> 
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                </div>
+                <div class="pagination_wrap">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
         <!-- ----------------------------------------------------- best menu -->
-        <div class="best_menu">
-            <div class="menu_wrap">
-                <a href="#" class="steak"><img src="./images/menu1.jpg" alt=""></a>
-                <a href="#" class="pasta"><img src="./images/menu2.jpg" alt=""></a>
-                <a href="#" class="rice"><img src="./images/menu3.jpg" alt=""></a>
-                <a href="#" class="sushi"><img src="./images/menu4.jpg" alt=""></a>
-                <a href="#" class="fruit"><img src="./images/menu5.jpg" alt=""></a>
-                <a href="#" class="pizza"><img src="./images/menu6.jpg" alt=""></a>
-            </div>
-            <div class="right">
-                <p>HomeStaurant</p>
-                <h1>BEST MENU</h1>
-                <p>홈스토랑 MD 추천 <span>PICK!</span></p>
-                <a href="#" class="more">MORE</a>
+        <div class="best">
+            <div class="best_wrap">
+                <div class="menu_wrap">
+                    <a href="#" class="steak"><img src="./images/menu1.jpg" alt=""></a>
+                    <a href="#" class="pasta"><img src="./images/menu2.jpg" alt=""></a>
+                    <a href="#" class="rice"><img src="./images/menu3.jpg" alt=""></a>
+                    <a href="#" class="sushi"><img src="./images/menu4.jpg" alt=""></a>
+                    <a href="#" class="fruit"><img src="./images/menu5.jpg" alt=""></a>
+                    <a href="#" class="pizza"><img src="./images/menu6.jpg" alt=""></a>
+                </div>
+                <div class="right">
+                    <div class="wrap">
+                        <p class="txt1">HomeStaurant</p>
+                        <h1>BEST MENU</h1>
+                        <p class="txt2">홈스토랑 MD 추천 <span>PICK!</span></p>
+                        <a href="#" class="more">MORE</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <!-- ---------------------------------------------------------- footer -->
     <footer>
-        <div class="left">
-            <p>&#40;주>&#41;이랜드이츠 | 서울특별시 금천구가산디지털1로 186, 213호(가산동) 제이플라츠</p>
-            <p>매장 이용관련 문의 및 불편사항 : 1577-1259 | 이메일 : elandfood&#64;eland.co.kr</p>
-            <p>Copyright©2013 ASHLEY</p>
-        </div>
-        <div class="right">
-            <div class="sns">
-                <a href="#" class="insta"></a>
-                <a href="#" class="facebook"></a>
+        <div class="ft_wrap">
+            <div class="left">
+                <p>&#40;주>&#41;이랜드이츠 | 서울특별시 금천구가산디지털1로 186, 213호(가산동) 제이플라츠</p>
+                <p>매장 이용관련 문의 및 불편사항 : 1577-1259 | 이메일 : elandfood&#64;eland.co.kr</p>
+                <p>Copyright©2013 ASHLEY</p>
             </div>
-            <div class="ismsp">
-                <a href="#" class="ismsp_logo"><img src="./images/ft_makeimg.png" alt="ismsp"></a>
-                <div class="txt_wrap">
-                    <p>인증범위 : 이랜드이츠 온아린 서비스</p>
-                    <p>(애슐리, 캠페인서비스, 홈스토랑, 이랜드이츠, 자연별곡, 더카페)</p>
-                    <p>인증기간 : 2022.08.17 ~ 2025.08.16</p>
+            <div class="right">
+                <div class="sns">
+                    <a href="#" class="insta"><img src="./images/insta.png" alt="insta"></a>
+                    <a href="#" class="facebook"><img src="./images/facebook.png" alt="facebook"></a>
+                </div>
+                <div class="ismsp">
+                    <a href="#" class="ismsp_logo"><img src="./images/ft_makeimg.png" alt="ismsp"></a>
+                    <div class="txt_wrap">
+                        <p>인증범위 : 이랜드이츠 온아린 서비스</p>
+                        <p>(애슐리, 캠페인서비스, 홈스토랑, 이랜드이츠, 자연별곡, 더카페)</p>
+                        <p>인증기간 : 2022.08.17 ~ 2025.08.16</p>
+                    </div>
                 </div>
             </div>
         </div>
